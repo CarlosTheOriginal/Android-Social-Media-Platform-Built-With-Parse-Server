@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Profile">
+
+
+    <ImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="150dp"
+        android:clickable="false"
+        app:srcCompat="@drawable/default_profile_photo" />
+
+    <TextView
+        android:id="@+id/profileDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePhoto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="145dp"
+        android:text="@string/display_name"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/profilePhotoUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePhoto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="145dp"
+        android:fontFamily="cursive"
+        android:text="@string/username"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/followerNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePhotoUsername"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/followers"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/followerNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/followerNumberTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/int_variable"
+        android:textColor="@color/gavnGreen"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/followingNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePhotoUsername"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/following"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/followingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/followingNumberTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/int_variable"
+        android:textColor="@color/gavnGreen"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/userStory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/followerNumber"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/bio_placeholder"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/myPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userStory"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="145dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/my_posts"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/myPostsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myPosts"
+        android:layout_marginTop="0dp" />
+
+
+</RelativeLayout>

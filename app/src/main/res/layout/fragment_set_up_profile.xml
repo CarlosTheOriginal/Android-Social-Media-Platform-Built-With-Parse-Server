@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetUpProfile">
+
+    <EditText
+        android:id="@+id/signUpEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setUpDisplayName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/setUpDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="@string/enter_cool_name_here"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/setUpProfileDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/done" />
+
+
+</RelativeLayout>

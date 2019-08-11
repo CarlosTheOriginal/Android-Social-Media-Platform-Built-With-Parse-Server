@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Hub">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="?android:windowBackground"
+        app:labelVisibilityMode="auto"
+        app:menu="@menu/bottom_navigation_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <fragment
+        android:id="@+id/hubFragment"
+        android:name="com.thegavners.CarlosMbenderaGSM.Feed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_below="@+id/toolbarHolder"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        tools:layout="@layout/fragment_feed" />
+
+</RelativeLayout>

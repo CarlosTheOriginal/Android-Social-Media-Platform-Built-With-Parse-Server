@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/switchToMyProfile"
+        android:icon="@drawable/default_profile_photo"
+        android:orderInCategory="1"
+        android:title="@string/profile_title">
+
+    </item>
+
+    <item
+        android:id="@+id/savedPosts"
+        android:icon="@drawable/saved_posts"
+        android:orderInCategory="3"
+        android:title="@string/saved_posts">
+
+    </item>
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/chat"
+        android:orderInCategory="4"
+        android:title="@string/chats">
+
+    </item>
+
+    <item
+        android:id="@+id/invite"
+        android:icon="@drawable/share"
+        android:orderInCategory="5"
+        android:title="@string/invite_some_friends">
+
+    </item>
+
+    <item
+        android:id="@+id/feedBack"
+        android:icon="@drawable/feedback"
+        android:orderInCategory="6"
+        android:title="@string/feed_back">
+
+    </item>
+
+    <!--
+        <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="@string/settings"
+        android:orderInCategory="7"
+        >
+
+        </item>
+        -->
+
+
+    <item
+        android:id="@+id/logOut"
+        android:icon="@drawable/logout"
+        android:orderInCategory="7"
+        android:title="@string/log_out">
+
+    </item>
+
+</menu>

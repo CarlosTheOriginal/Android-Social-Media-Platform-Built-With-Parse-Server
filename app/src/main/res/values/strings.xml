@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GSM</string>
+    <string name="switch_to_sign_up">Sign Up?</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Sign In?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up_button">Sign Me Up</string>
+    <string name="email">Email</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="int_variable">XYZ</string>
+
+    <string name="set_up_profile_guide1">A picture is worth a thousand words.</string>
+    <string name="set_up_profile_guide2">What does your say?</string>
+    <string name="set_up_profile_guide3">Touch the photo to set your profile picture.</string>
+    <string name="set_up_profile_guide4">Kindly describe yourself.(Optional)</string>
+
+    <string name="bio_char_limit">/144</string>
+    <string name="done">Done</string>
+    <string name="display_name">Cool Name</string>
+
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="my_posts">My Posts</string>
+
+    <string name="bio_placeholder">The user Story comes here</string>
+    <string name="enter_cool_name_here">Enter Cool Name here.</string>
+    <string name="this_is_the_name_everyone_sees">This is the name everyone sees.</string>
+
+    <string name="search">Search</string>
+
+    <string name="feed_title">My Feed</string>
+    <string name="roam_title">Roam</string>
+    <string name="profile_title">Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="saved_posts">Saved Posts</string>
+    <string name="share">Share</string>
+    <string name="feed_back">Feed Back</string>
+    <string name="log_out">Log Out</string>
+    <string name="say_something">Say something.</string>
+    <string name="invite_some_friends">Invite some friends</string>
+    <string name="sign_in">Sign In</string>
+    <string name="tell_them_to_enter_your_username_as_a_reference_after_they_set_up_they_re_profile">Tell them to enter your username as a reference after they set up they\'re profile.</string>
+    <string name="your_username_is">Your Username is:</string>
+    <string name="so_invite_a_few_friends">So invite a few friends.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="events">Events</string>
+    <string name="chats">Chats</string>
+
+</resources>

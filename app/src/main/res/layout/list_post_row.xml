@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/postProfilePhoto"
+        style="@style/postProfilePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        style="@style/linearLayoutHorizontal"
+        android:layout_toEndOf="@+id/postProfilePhoto">
+
+        <TextView
+            android:id="@+id/textViewDisplayName"
+            style="@style/textViewPost"
+            android:layout_marginStart="0dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/postUserName"
+            style="@style/textViewPost" />
+
+        <TextView
+            android:id="@+id/postTime"
+            style="@style/textViewPost" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/postTextContent"
+        style="@style/textViewPost"
+        android:layout_below="@+id/linearLayoutHeader"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/postProfilePhoto" />
+
+    <ImageView
+        android:id="@+id/postImageContent"
+        android:layout_width="296dp"
+        android:layout_height="148dp"
+        android:layout_below="@+id/postTextContent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        style="@style/linearLayoutHorizontal"
+        android:layout_below="@id/postImageContent"
+        android:layout_alignStart="@id/postTextContent"
+        android:layout_marginEnd="40dp">
+
+
+        <ImageView
+            android:id="@+id/imageViewLike"
+            style="@style/imageViewBottom"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/like" />
+
+        <ImageView
+            android:id="@+id/imageViewComment"
+            style="@style/imageViewBottom"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/comment" />
+
+
+        <ImageView
+            android:id="@+id/imageViewBookmark"
+            style="@style/imageViewBottom"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/bookmark" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

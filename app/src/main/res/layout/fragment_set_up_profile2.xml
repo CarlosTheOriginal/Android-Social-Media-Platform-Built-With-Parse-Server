@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setUpProfile2">
+
+    <ImageView
+        android:id="@+id/setUpProfilePhoto"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="125dp"
+        app:srcCompat="@drawable/default_profile_photo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/set_up_profile_guide1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerInParent="true"
+        android:text="@string/set_up_profile_guide2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setUpProfilePhoto"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/set_up_profile_guide3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/setUpProfileBio"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/set_up_profile_guide4"
+        android:inputType="textMultiLine"
+        android:maxLength="144"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bioLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setUpProfileBio"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/bioLimit"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bioLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setUpProfileBio"
+        android:layout_alignEnd="@+id/setUpProfileBio"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="0dp"
+        android:text="@string/bio_char_limit"
+        android:textColor="@color/gavnGreen"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/setUpProfile2Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bioLength"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/done" />
+
+
+</RelativeLayout>
