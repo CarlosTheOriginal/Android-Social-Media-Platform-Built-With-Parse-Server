@@ -1,4 +1,4 @@
-# GSM
+# The App
 A generic social media platform for Android Devices, developed with Parse Server and Android Studio.
 
 # Getting Started
